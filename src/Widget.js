@@ -9,7 +9,7 @@ export default function Widget() {
       options={{
         action: 'submit-form',
         theme: 'light',
-        language: 'fr',
+        language: 'en',
       }}
       scriptOptions={{
         appendTo: 'body'
