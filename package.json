@@ -1,61 +1,39 @@
 {
-	"name": "root",
-	"version": "0.0.1",
-	"private": true,
-	"packageManager": "pnpm@9.0.6",
-	"scripts": {
-		"demo": "pnpm run --filter=nextjs-demo dev",
-		"dev": "concurrently \"npm:lib:build:watch\" \"npm:demo\" -c auto,cyan",
-		"format:write": "npx prettier **/*.{js,mjs,cjs,ts,tsx,json} --write .",
-		"format:check": "npx prettier **/*.{js,mjs,cjs,ts,tsx,json} --check .",
-		"lib:build": "pnpm run --filter=@marsidev/react-turnstile build",
-		"lib:build:watch": "pnpm run --filter=@marsidev/react-turnstile build:watch",
-		"lint": "pnpm run --parallel lint",
-		"lint:fix": "pnpm run --parallel lint:fix",
-		"release": "pnpm run --filter=@marsidev/react-turnstile release",
-		"test": "pnpm run test:integration && pnpm run test:e2e",
-		"test:e2e": "playwright test",
-		"test:integration": "pnpm run --filter=@marsidev/react-turnstile test:integration",
-		"type-check": "pnpm run --parallel type-check"
-	},
-	"devDependencies": {
-		"@antfu/ni": "0.21.12",
-		"@antfu/utils": "0.7.8",
-		"@playwright/test": "1.43.1",
-		"@types/node": "20.14.0",
-		"@types/react": "18.3.3",
-		"@types/react-dom": "18.3.0",
-		"concurrently": "8.2.2",
-		"eslint-config-custom": "workspace:*",
-		"lint-staged": "15.2.5",
-		"playwright": "1.43.1",
-		"pnpm": "9.1.4",
-		"prettier": "3.2.5",
-		"simple-git-hooks": "2.11.1",
-		"typescript": "5.4.5"
-	},
-	"simple-git-hooks": {
-		"pre-commit": "pnpm lint-staged"
-	},
-	"lint-staged": {
-		"**/*.{js,mjs,cjs,ts,tsx}": [
-			"eslint . --cache --fix",
-			"prettier --write --cache --ignore-unknown"
-		],
-		"**/*.json": [
-			"prettier --write --cache --ignore-unknown"
-		]
-	},
-	"pnpm": {
-		"peerDependencyRules": {
-			"ignoreMissing": [
-				"typescript",
-				"eslint",
-				"prettier"
-			]
-		}
-	},
-	"eslintConfig": {
-		"extends": "custom"
-	}
+  "name": "react-turnstile",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@marsidev/react-turnstile": "^0.7.1",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

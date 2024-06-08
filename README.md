@@ -1,91 +1,70 @@
-<div align="center">
- <h1>React Turnstile</h1>
- <img src="preview.png" width="300" alt="Cloudflare Turnstile widget" />
- <p><a href="https://developers.cloudflare.com/turnstile/">Cloudflare Turnstile</a> integration for React.</p>
- <a href="https://npm.im/@marsidev/react-turnstile">
-  <img src="https://badgen.net/npm/v/@marsidev/react-turnstile?style=flat-square" alt="npm version" />
- </a>
- <a href="https://npm.im/@marsidev/react-turnstile">
-  <img src="https://badgen.net/npm/dm/@marsidev/react-turnstile?style=flat-square" alt="npm downloads" />
- </a>
- <a href="https://packagephobia.com/result?p=@marsidev/react-turnstile">
-  <img src="https://badgen.net/packagephobia/install/@marsidev/react-turnstile?style=square-flat" alt="install size" />
- </a>
- <a href="https://bundlephobia.com/package/@marsidev/react-turnstile">
-  <img src="https://badgen.net/bundlephobia/min/@marsidev/react-turnstile?style=square-flat" alt="bundle size" />
- </a>
- <!-- <a href="https://bundlejs.com">
-  <img src="https://edge.bundlejs.com/?q=@marsidev/react-turnstile&badge&badge-style=flat-square" alt="bundle size powered by bundlejs.com" />
- </a> -->
- <a href="https://github.com/marsidev/react-turnstile/actions/workflows/ci.yml"><img src="https://badgen.net/github/checks/marsidev/react-turnstile/main?style=flat-square" alt="CI status"></a>
- <img src="https://img.shields.io/badge/tested_with-playwright-3ea744.svg?style=flat-square" alt="tested with playwright" />
- <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs are welcome" />
-</div>
+# Getting Started with Create React App
 
-## Features
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-* 💪 Smart verification with minimal user interaction
-* 🕵️‍♀️ Privacy-focused approach
-* 💉 Automatic script injection
-* ⚡️ SSR ready
-* 💻 TypeScript support
+## Available Scripts
 
-## [Docs](https://docs.page/marsidev/react-turnstile/) | [Demo](https://react-turnstile.vercel.app/)
+In the project directory, you can run:
 
-## Getting started
+### `npm start`
 
-1. [Follow these steps](https://developers.cloudflare.com/turnstile/get-started/) to obtain a free site key and secret key from Cloudflare.
-2. Install `@marsidev/react-turnstile` into your React project.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
- ```bash
- npm i @marsidev/react-turnstile
- ```
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Usage
+### `npm test`
 
-```jsx
-import { Turnstile } from '@marsidev/react-turnstile'
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-function Widget() {
-  return <Turnstile siteKey='1x00000000000000000000AA' />
-}
-```
+### `npm run build`
 
-> Checkout [the docs](https://docs.page/marsidev/react-turnstile) for more examples and for a detailed info about the `Turnstile` props.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-> Checkout [the demo](https://react-turnstile.vercel.app/) for a live example.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Contributing
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Any contributions are greatly appreciated. If you have a suggestion that would make this project better, please fork the repo and create a Pull Request. You can also [open an issue](https://github.com/marsidev/react-turnstile/issues/new).
+### `npm run eject`
 
-## Development
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-* [Fork](https://github.com/marsidev/react-turnstile/fork) or clone this repository.
-* Install dependencies with `pnpm install`.
-* You can use `pnpm dev` to start the demo page in dev mode, which also rebuild the library when file changes are detected in the `packages/lib` folder.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-> The library is written under the `packages/lib` folder, the demo page is under the `demos/nextjs` folder and the docs are under the `docs` folder.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## Contributors
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-<a href="https://github.com/marsidev/react-turnstile/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=marsidev/react-turnstile" alt="Contributors" />
-</a>
+## Learn More
 
-## Credits
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Inspired by
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-* [nuxt-turnstile](https://github.com/danielroe/nuxt-turnstile)
-* [svelte-turnstile](https://github.com/ghostdevv/svelte-turnstile)
-* [react-google-recaptcha-v3](https://github.com/t49tran/react-google-recaptcha-v3)
-* [reaptcha](https://github.com/sarneeh/reaptcha)
+### Code Splitting
 
-## Support
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-If you like this project, please consider supporting it through a [PayPal donation](https://paypal.me/marsigliacr). :blush:
+### Analyzing the Bundle Size
 
-## License
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Published under the [MIT License](./LICENCE).
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
